@@ -11,7 +11,7 @@
       <div class="col-lg-8 mt-4">
         <h5 class="card-header">Share "{{ post.title }}" by e-mail</h5>
           {% if sent %}
-          <h1>E-mail successfully sent</h1>
+          <h3>E-mail successfully sent</h3>
           <p>
             "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
           </p>
@@ -89,5 +89,5 @@
     <!-- /.row -->
 
   </div>
-  <!-- /.container -->
+
 {% endblock content %}
