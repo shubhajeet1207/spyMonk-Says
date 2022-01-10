@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load blog_tags %}
+
+{% block content %}
+ <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">
+          Blog Posts
+          {% if tag %}<small>Posts tagged with "{{ tag }}"</small>{% endif %}
+          {% if query %}<small>Search result for "{{ query }}"</small>{% endif %}
+        </h1>
+
+        {% for post in object_list %}
+           <!-- Blog Post -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+                </div>
+                <div class="col-8">
+                  <h2 class="card-title">{{ post.title }}</h2>
+                  <p class="card-text">{{ post.body|truncatewords:"10" }}</p>
+                  <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Read More &rarr;</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+             <div class="d-flex justify-content-between">
+              <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18.6 19.5H21v2h-6v-6h2v2.73c1.83-1.47 3-3.71 3-6.23 0-4.07-3.06-7.44-7-7.93V2.05c5.05.5 9 4.76 9 9.95 0 2.99-1.32 5.67-3.4 7.5zM4 12c0-2.52 1.17-4.77 3-6.23V8.5h2v-6H3v2h2.4A9.966 9.966 0 002 12c0 5.19 3.95 9.45 9 9.95v-2.02c-3.94-.49-7-3.86-7-7.93zm12.24-3.89l-5.66 5.66-2.83-2.83-1.41 1.41 4.24 4.24 7.07-7.07-1.41-1.41z"></path></svg>
+                {{ post.publish }}
+              </div>
+              <div>
+                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 20 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.25 0h-6c-0.412 0-0.989 0.239-1.28 0.53l-7.439 7.439c-0.292 0.292-0.292 0.769 0 1.061l6.439 6.439c0.292 0.292 0.769 0.292 1.061 0l7.439-7.439c0.292-0.292 0.53-0.868 0.53-1.28v-6c0-0.412-0.337-0.75-0.75-0.75zM15.5 6c-0.828 0-1.5-0.672-1.5-1.5s0.672-1.5 1.5-1.5 1.5 0.672 1.5 1.5-0.672 1.5-1.5 1.5z"></path><path d="M2 8.5l8.5-8.5h-1.25c-0.412 0-0.989 0.239-1.28 0.53l-7.439 7.439c-0.292 0.292-0.292 0.769 0 1.061l6.439 6.439c0.292 0.292 0.769 0.292 1.061 0l0.47-0.47-6.5-6.5z"></path></svg>
+                {% for tag in post.tags.all %}
+                  <a href="{% url "blog:post_list_by_tag" tag.slug %}">
+                    {{ tag.name }}
+                  </a>
+                  {% if not forloop.last %}, {% endif %}
+                {% endfor %}
+              </div>
+             </div>
+            </div>
+          </div>
+        {% empty %}
+          <p class="lead">No posts found.</p>
+        {% endfor %}
+
+       
+
+        {% if is_paginated %}
+          {% include 'pagination.html' with page=page_obj %}
+        {% endif %}
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        {% include 'partials/_search.html' %}
+
+        {% show_latest_posts 5 %}
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Most Commented Post</h5>
+          <div class="card-body">
+           {% get_most_commented_posts as most_commented_posts %}
+          <ul class="list-unstyled">
+            {% for post in most_commented_posts %}
+              <li>
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+{% endblock content %}

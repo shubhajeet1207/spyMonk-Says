@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="26">
+            <item index="0" class="java.lang.String" itemvalue="cffi" />
+            <item index="1" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="2" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="3" class="java.lang.String" itemvalue="Pillow" />
+            <item index="4" class="java.lang.String" itemvalue="django-crispy-forms" />
+            <item index="5" class="java.lang.String" itemvalue="Django" />
+            <item index="6" class="java.lang.String" itemvalue="dj-database-url" />
+            <item index="7" class="java.lang.String" itemvalue="django-ckeditor" />
+            <item index="8" class="java.lang.String" itemvalue="crispy-bootstrap5" />
+            <item index="9" class="java.lang.String" itemvalue="django-heroku" />
+            <item index="10" class="java.lang.String" itemvalue="psycopg2" />
+            <item index="11" class="java.lang.String" itemvalue="tzdata" />
+            <item index="12" class="java.lang.String" itemvalue="asgiref" />
+            <item index="13" class="java.lang.String" itemvalue="requests" />
+            <item index="14" class="java.lang.String" itemvalue="whitenoise" />
+            <item index="15" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="16" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="17" class="java.lang.String" itemvalue="chardet" />
+            <item index="18" class="java.lang.String" itemvalue="signals" />
+            <item index="19" class="java.lang.String" itemvalue="certifi" />
+            <item index="20" class="java.lang.String" itemvalue="django-js-asset" />
+            <item index="21" class="java.lang.String" itemvalue="python-decouple" />
+            <item index="22" class="java.lang.String" itemvalue="django-email-users" />
+            <item index="23" class="java.lang.String" itemvalue="pytz" />
+            <item index="24" class="java.lang.String" itemvalue="urllib3" />
+            <item index="25" class="java.lang.String" itemvalue="idna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

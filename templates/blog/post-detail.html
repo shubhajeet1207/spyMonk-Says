@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load blog_tags %}
+
+{% block content %}
+ <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{ object.title }}</h1>
+
+        <!-- Author -->
+        <p class="lead">by {{ object.author }}</p>
+
+        <hr>
+          {{ object.body }}
+           <br>
+        <a href="{% url 'blog:post_share' object.id %}" class="badge rounded-pill bg-success">Share<svg stroke="#fff" fill="#fff" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 10c0 0 0.919-3 6-3v3l6-4-6-4v3c-4 0-6 2.495-6 5zM11 12h-9v-6h1.967c0.158-0.186 0.327-0.365 0.508-0.534 0.687-0.644 1.509-1.135 2.439-1.466h-6.914v10h13v-4.197l-2 1.333v0.864z"></path></svg>
+        </a>
+        <hr>
+
+        <h6 class="bg-primary p-2 text-white mb-3">Similar posts</h6>
+        <div class="row">
+          {% for post in similar_posts %}
+            <div class="col-md-4">
+              <div class="card" style="width: 200px">
+                <div class="card-image-top">
+                  <img src="{{ object.image.url}}" alt="" class="img-fluid">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          {% empty %}
+            There are no similar posts yet.
+          {% endfor %}
+        </div>
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+          <h6 class="card-header">Leave a Comment:</h6>
+          <div class="card-body">
+            <form action="{{ object.get_absolute_url }}" method="POST">
+            
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="name">{{ form.name.label_tag }}</label>
+                <input type="text" class="form-control {% if form.name.errors %}is-invalid{% endif %}" name="name"
+                id="id_name" placeholder="Your name" value="{{ form.name.value|default:""}}">
+                {% if form.name.errors %}
+                  <div class="invalid-feedback">
+                    {{ form.name.errors }}
+                  </div>
+                {% endif %}
+              </div>
+              
+              <div class="form-group">
+                <label for="email">{{ form.email.label_tag }}</label>
+                <input type="email" class="form-control {% if form.email.errors %}is-invalid{% endif %}" name="email" id="id_email"
+                placeholder="Your email" value="{{ form.email.value|default:""}}">
+                {% if form.email.errors %}
+                  <div class="invalid-feedback">
+                    {{ form.email.errors }}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{form.body.label_tag}}
+                <textarea name="body" id="id_body" class="form-control {% if form.body.errors %}is-invalid{% endif %}" rows="3" 
+                placeholder="What you wanna tell?">{{ form.body.value|default:""}}</textarea>
+                 <div class="invalid-feedback">
+                    {{ form.body.errors }}
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        {% with comments.count as total_comments %}
+          <h6 class="bg-primary p-2 text-white mb-3">
+            {{ total_comments }} comment{{ total_comments|pluralize }}
+          </h6>
+        {% endwith %}
+
+        {% for comment in comments %}
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <div class="media-body">
+            <h5 class="mt-0"> Comment {{ forloop.counter }} by <span class="text-secondary">{{ comment.name }}</span> {{ comment.created }}</h5>
+             {{ comment.body|linebreaks }}
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+      
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        {% include 'partials/_search.html' %}
+
+        {% show_latest_posts 5 %}
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Most Commented Post</h5>
+          <div class="card-body">
+           {% get_most_commented_posts as most_commented_posts %}
+            <ul class="list-unstyled">
+              {% for post in most_commented_posts %}
+                <li>
+                  <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+{% endblock content %}

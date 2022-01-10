@@ -1,0 +1,69 @@
+@import url('http://fonts.cdnfonts.com/css/walter-elias');
+@import url('http://fonts.cdnfonts.com/css/bigboz');
+@import url('http://fonts.cdnfonts.com/css/assailand');
+
+body{
+    padding-top: 50px;
+    background-color: #414558;
+    color: #fff;
+    font-family: 'Assailand', sans-serif;
+
+}
+
+.h1, h1 {
+    color: #ff79c6;
+    font-family: 'Bigboz', sans-serif;
+}
+
+a {
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    text-decoration: none;
+    color: #ff79c6;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-family: 'Walter Elias', sans-serif;
+}
+
+.fixed-top {
+    background: #282a36 !important;
+}
+
+.card-header {
+    color: #fff;
+}
+
+.mb-4, .my-4 {
+    background: transparent;
+}
+
+.justify-content-between {
+    color: #fff;
+}
+
+.btn-dark {
+    color: #282a36;
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+}
+
+.btn-info {
+    color: #282a36;
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+}
+
+.bg-primary {
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.bg-success{
+    color: #282a36;
+    background-color: #50fa7b !important;
+    border-color: #50fa7b;
+}
+
+
