@@ -2,6 +2,7 @@
 @import url('http://fonts.cdnfonts.com/css/bigboz');
 @import url('http://fonts.cdnfonts.com/css/assailand');
 
+
 body{
     padding-top: 50px;
     background-color: #414558;
@@ -66,4 +67,10 @@ a {
     border-color: #50fa7b;
 }
 
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+    color: #fff;
+    margin: 2px;
+}
 
