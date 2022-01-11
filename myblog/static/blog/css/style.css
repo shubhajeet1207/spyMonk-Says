@@ -40,6 +40,10 @@ a {
     background: transparent;
 }
 
+.mb-3, .my-3 {
+    background: transparent !important;
+}
+
 .justify-content-between {
     color: #fff;
 }

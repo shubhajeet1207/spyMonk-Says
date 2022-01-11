@@ -15,7 +15,10 @@
 
         <!-- Author -->
         <p class="lead">by {{ object.author }}</p>
+        <hr>
 
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="{{ object.image.url }}" alt="">
         <hr>
           {{ object.body }}
            <br>

@@ -21,10 +21,10 @@
           <div class="card mb-4">
             <div class="card-body">
               <div class="row">
-                <div class="col-4">
-                  <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
-                </div>
-                <div class="col-8">
+                  <div class="col-4">
+                    <img class="card-img-top" src="{{ post.image.url }}" alt="Card image cap">
+                  </div>
+                 <div class="col-8">
                   <h2 class="card-title">{{ post.title }}</h2>
                   <p class="card-text">{{ post.body|truncatewords:"20" }}</p>
                   <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Read More &rarr;</a>
