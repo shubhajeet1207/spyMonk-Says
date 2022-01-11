@@ -19,4 +19,4 @@ A personal blog website made with **django** and **flake8**.
 
 ###  📙 Documentations Used :
 
-    <a href="https://pypi.org/project/django-cloudinary-storage/">django-cloudinary-storage</a>
+🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">django-cloudinary-storage</a>

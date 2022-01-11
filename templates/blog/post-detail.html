@@ -21,11 +21,10 @@
         <img class="img-fluid rounded" src="{{ object.image.url }}" alt="">
         <hr>
           {{ object.body }}
-           <br>
-        <a href="{% url 'blog:post_share' object.id %}" class="badge rounded-pill bg-success">Share<svg stroke="#fff" fill="#fff" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 10c0 0 0.919-3 6-3v3l6-4-6-4v3c-4 0-6 2.495-6 5zM11 12h-9v-6h1.967c0.158-0.186 0.327-0.365 0.508-0.534 0.687-0.644 1.509-1.135 2.439-1.466h-6.914v10h13v-4.197l-2 1.333v0.864z"></path></svg>
+          <br>
+        <a href="{% url 'blog:post_share' object.id %}" class="ui pink button">Share<svg stroke="#fff" fill="#fff" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 10c0 0 0.919-3 6-3v3l6-4-6-4v3c-4 0-6 2.495-6 5zM11 12h-9v-6h1.967c0.158-0.186 0.327-0.365 0.508-0.534 0.687-0.644 1.509-1.135 2.439-1.466h-6.914v10h13v-4.197l-2 1.333v0.864z"></path></svg>
         </a>
-        <hr>
-
+          <hr>
         <h6 class="bg-primary p-2 text-white mb-3">Similar posts</h6>
         <div class="row">
           {% for post in similar_posts %}
@@ -87,24 +86,14 @@
           </div>
         </div>
 
-        {% with comments.count as total_comments %}
-          <h6 class="bg-primary p-2 text-white mb-3">
-            {{ total_comments }} comment{{ total_comments|pluralize }}
-          </h6>
-        {% endwith %}
 
-        {% for comment in comments %}
-        <!-- Single Comment -->
-        <div class="media mb-4">
-          <div class="media-body">
-            <h5 class="mt-0"> Comment {{ forloop.counter }} by <span class="text-secondary">{{ comment.name }}</span> {{ comment.created }}</h5>
-             {{ comment.body|linebreaks }}
-          </div>
-        </div>
-        {% endfor %}
+        {% include 'partials/_comments.html' %}
 
       </div>
-      
+
+
+
+
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4">
 
@@ -132,3 +121,5 @@
   </div>
   <!-- /.container -->
 {% endblock content %}
+
+

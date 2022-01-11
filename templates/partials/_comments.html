@@ -1,0 +1,31 @@
+<!-- Categories Widget -->
+<div class="card my-4">
+    <h5 class="card-header">{% with comments.count as total_comments %}
+        Comment{{ total_comments|pluralize }} - {{ total_comments }}
+        {% endwith %}
+    </h5>
+    <div class="card-body">
+        <ul class="list-unstyled mb-0">
+            <li>
+                 {% for comment in comments %}
+                        <!-- Single Comment -->
+                    <div class="media mb-4 md-5">
+                     <div class="media-body">
+                        <a class="ui positive basic ">{{ comment.name }}
+                            <span class="text-muted">{{ comment.created }}</span>
+                        </a>
+                        <br>
+                        <h6> {{ comment.body|linebreaks }} </h6>
+                    </div>
+                    </div>
+                <hr>
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+

@@ -20,7 +20,7 @@ a {
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     text-decoration: none !important;
-    color: #ff79c6;
+    color: #ff79c6 !important;
 }
 
 .navbar-brand {
