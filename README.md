@@ -15,3 +15,8 @@ A personal blog website made with **django** and **flake8**.
 <a href="#"><img alt="SQLite" src ="https://img.shields.io/badge/SQLite-316192?style=for-the-badge&logo=sqlite&logoColor=white"></a>
 <a href="#"><img alt="PostgreSQL" src ="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"></a>
 <a href="#"><img alt="Pycharm" src="https://img.shields.io/badge/pycharm-FFD700?style=for-the-badge&logo=pycharm&logoColor=black"></a>
+
+
+###  📙 Documentations Used :
+
+<a href="https://pypi.org/project/django-cloudinary-storage/">django-cloudinary-storage</a>
