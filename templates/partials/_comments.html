@@ -16,11 +16,10 @@
                                 <span class="text-muted">{{ comment.created }}</span>
                             </a>
                         </h6>
-                        <br>
-                        <p> {{ comment.body|linebreaks }} </p>
+                        <p class="text"> {{ comment.body|linebreaks }} </p>
                     </div>
                     </div>
-                <hr>
+                <hr class="line-color">
                 {% endfor %}
             </li>
         </ul>

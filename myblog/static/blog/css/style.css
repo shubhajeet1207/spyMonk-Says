@@ -32,8 +32,17 @@ a {
     background: #282a36 !important;
 }
 
+.line-color {
+    background-color: #fff;
+}
+
+.text {
+    color: #f7f7f7;
+}
+
 .card-header {
-    color: #fff;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .mb-4, .my-4 {
