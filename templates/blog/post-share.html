@@ -10,10 +10,11 @@
       <!-- Post Content Column -->
       <div class="col-lg-8 mt-4">
           {% if sent %}
-          <h3 class="display-5 fw-bold">E-mail was successfully sent</h3>
+          <h3 class="display-5 fw-bold">E-mail was sent successfully </h3>
             <hr>
         <p class="mail-detail">
-            "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
+            "{{ post.title }}" was successfully sent to -
+              {{ form.cleaned_data.to }}.
           </p>
         {% else %}
           <div class="card-body">
