@@ -9,10 +9,10 @@
 
       <!-- Post Content Column -->
       <div class="col-lg-8 mt-4">
-        <h5 class="card-header">Share "{{ post.title }}" by e-mail</h5>
           {% if sent %}
-          <h3>E-mail successfully sent</h3>
-          <p>
+          <h3 class="display-5 fw-bold">E-mail was successfully sent</h3>
+            <hr>
+        <p class="mail-detail">
             "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
           </p>
         {% else %}
@@ -60,6 +60,10 @@
             </form>
           </div>
           {% endif %}
+            <hr>
+          <div class="ui buttons">
+            <button class="ui pink button"><a class="back" href="{% url 'blog:post_list' %}">Back to Homepage</a></button>
+          </div>
       </div>
 
       <!-- Sidebar Widgets Column -->

@@ -20,7 +20,7 @@ a {
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     text-decoration: none !important;
-    color: #ff79c6 !important;
+    color: #ff79c6;
 }
 
 .navbar-brand {
@@ -78,3 +78,19 @@ svg {
     margin: 2px;
 }
 
+.display-5 {
+    font-size: 2.25rem;
+    color: #2ecc40 !important;
+    margin-bottom: 1em;
+}
+
+.mail-detail {
+    font-size: 1.25rem;
+}
+
+.back {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}

@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'blog',
     'taggit',
-    'cloudinary_storage'
+    'cloudinary_storage',
+    'ckeditor',
 ]
 
 SITE_ID = 1

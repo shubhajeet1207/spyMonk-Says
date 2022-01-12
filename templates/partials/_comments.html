@@ -11,11 +11,13 @@
                         <!-- Single Comment -->
                     <div class="media mb-4 md-5">
                      <div class="media-body">
-                        <a class="ui positive basic ">{{ comment.name }}
-                            <span class="text-muted">{{ comment.created }}</span>
-                        </a>
+                        <h6 class="ui positive basic ">{{ comment.name }}
+                            <a>
+                                <span class="text-muted">{{ comment.created }}</span>
+                            </a>
+                        </h6>
                         <br>
-                        <h6> {{ comment.body|linebreaks }} </h6>
+                        <p> {{ comment.body|linebreaks }} </p>
                     </div>
                     </div>
                 <hr>
