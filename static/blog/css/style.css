@@ -1,0 +1,114 @@
+@import url('http://fonts.cdnfonts.com/css/walter-elias');
+@import url('http://fonts.cdnfonts.com/css/bigboz');
+@import url('http://fonts.cdnfonts.com/css/assailand');
+
+
+body{
+    padding-top: 50px;
+    background-color: #414558;
+    color: #fff;
+    font-family: 'Assailand', sans-serif;
+
+}
+
+.h1, h1 {
+    color: #ff79c6;
+    font-family: 'Bigboz', sans-serif;
+}
+
+a {
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    text-decoration: none !important;
+    color: #ff79c6;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-family: 'Walter Elias', sans-serif;
+}
+
+.fixed-top {
+    background: #282a36 !important;
+}
+
+.line-color {
+    background-color: #fff;
+}
+
+.text {
+    color: #f7f7f7;
+}
+
+.card-header {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.mb-4, .my-4 {
+    background: transparent;
+}
+
+.mb-3, .my-3 {
+    background: transparent !important;
+}
+
+.ui.fluid.button {
+    background: #ffffff;
+}
+
+.mb-0, .my-0{
+     margin-bottom: 1em !important;
+}
+.justify-content-between {
+    color: #fff;
+}
+
+.btn-dark {
+    color: #282a36;
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+}
+
+.btn-info {
+    color: #282a36;
+    background-color: #50fa7b;
+    border-color: #50fa7b;
+}
+
+.bg-primary {
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.bg-success{
+    color: #282a36;
+    background-color: #50fa7b !important;
+    border-color: #50fa7b;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+    color: #fff;
+    margin: 2px;
+}
+
+.display-5 {
+    font-size: 2.25rem;
+    color: #2ecc40 !important;
+    margin-bottom: 1em;
+}
+
+.mail-detail {
+    font-size: 1.25rem;
+}
+
+.back {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+

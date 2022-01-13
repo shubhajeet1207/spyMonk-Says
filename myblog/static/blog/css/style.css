@@ -5,8 +5,8 @@
 
 body{
     padding-top: 50px;
-    background-color: #414558;
-    color: #fff;
+    background-color: #f4f3f9;
+    color: #000000;
     font-family: 'Assailand', sans-serif;
 
 }
@@ -29,7 +29,7 @@ a {
 }
 
 .fixed-top {
-    background: #282a36 !important;
+    background: #4b538a !important;
 }
 
 .line-color {
@@ -42,7 +42,7 @@ a {
 
 .card-header {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #d6daee;
 }
 
 .mb-4, .my-4 {
@@ -61,7 +61,7 @@ a {
      margin-bottom: 1em !important;
 }
 .justify-content-between {
-    color: #fff;
+    color: #4b538a;
 }
 
 .btn-dark {
@@ -79,6 +79,7 @@ a {
 .bg-primary {
     border-radius: 5px;
     width: fit-content;
+    color: #ff79c6 !important;
 }
 
 .bg-success{
@@ -90,7 +91,7 @@ a {
 svg {
     overflow: hidden;
     vertical-align: middle;
-    color: #fff;
+    color: #4b538a;
     margin: 2px;
 }
 
@@ -111,4 +112,11 @@ svg {
     text-decoration: none;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+}
 
+.connect {
+    color: #000000;
+}
