@@ -1,6 +1,6 @@
 # spyMonk-Says
 
-A personal blog website made with **django** and **flake8**.
+A personal blog website made with **django**
 
 
 ###  🛠 Technologies I used :
@@ -11,6 +11,7 @@ A personal blog website made with **django** and **flake8**.
 <a href="#"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
 <a href="#"><img alt="Markdown" src="https://img.shields.io/badge/markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"></a>
 <a href="#"><img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"></a>
+<a href="#"><img alt="Semantic" src="https://img.shields.io/badge/Semantic%20UI-35bdb2?style=for-the-badge&logo=semantic&logoColor=white"></a>
 <a href="#"><img alt="django" src="https://img.shields.io/badge/django-25A162?style=for-the-badge&logo=django&logoColor=white"></a>
 <a href="#"><img alt="SQLite" src ="https://img.shields.io/badge/SQLite-316192?style=for-the-badge&logo=sqlite&logoColor=white"></a>
 <a href="#"><img alt="PostgreSQL" src ="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"></a>
@@ -19,4 +20,6 @@ A personal blog website made with **django** and **flake8**.
 
 ###  📙 Documentations Used :
 
-🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">django-cloudinary-storage</a>
+🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">Django Cloudinary</a>
+🏷 <a href="https://pythonrepo.com/repo/shaunsephton-django-ckeditor-python-django-utilities">CKEditor</a>
+🏷 <a href="https://pypi.org/project/Faker/">faker</a>
