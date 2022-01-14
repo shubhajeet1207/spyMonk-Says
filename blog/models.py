@@ -32,6 +32,7 @@ class Post(models.Model):
         default='draft'
     )
 
+
     objects = models.Manager()
     published = PublishedManager()
     tags = TaggableManager()
