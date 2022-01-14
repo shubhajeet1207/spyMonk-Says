@@ -120,3 +120,14 @@ svg {
 .connect {
     color: #000000;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact-link {
+    display: flex;
+}

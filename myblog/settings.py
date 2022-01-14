@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'blog',
     'taggit',
     'cloudinary_storage',
-    'ckeditor',
 ]
 
 SITE_ID = 1
