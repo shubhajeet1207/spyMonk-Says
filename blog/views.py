@@ -27,7 +27,6 @@ class PostListView(ListView):
             search_vector = SearchVector('title', weight='A') +\
                 SearchVector('body', weight='B')
             search_query = SearchQuery(query)
-
             queryset = Post.published.annotate(
                 rank=SearchRank(search_vector, search_query)
             ).filter(rank__gte=0.3).order_by('-rank')
