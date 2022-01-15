@@ -20,6 +20,6 @@ A personal blog website made with **django**
 
 ###  📙 Documentations Used :
 
-🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">Django Cloudinary</a>
-🏷 <a href="https://pythonrepo.com/repo/shaunsephton-django-ckeditor-python-django-utilities">CKEditor</a>
+🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">Django Cloudinary</a> <br>
+🏷 <a href="https://pythonrepo.com/repo/shaunsephton-django-ckeditor-python-django-utilities">CKEditor</a> <br>
 🏷 <a href="https://pypi.org/project/Faker/">faker</a>
