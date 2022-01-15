@@ -29,7 +29,7 @@ SECRET_KEY = 'be9(c$x@g@d!x+bjcjtv!+bl7(pfec=)$uzrxbj867dfe4rp#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['spymonk-says.herokuapp.com']
 
 
 # Application definition
