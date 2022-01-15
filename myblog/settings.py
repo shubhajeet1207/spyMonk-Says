@@ -91,8 +91,6 @@ DATABASES = {
         'NAME': 'my_blog',
         'USER': 'postgres',
         'PASSWORD': 'shubhapra12072000',
-        'HOST': 'localhost',
-        'PORT': '5432',
     }
 }
 
