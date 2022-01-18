@@ -4,7 +4,7 @@
 A personal blog website made with **django**. <br>
 Here you can comment on my blogs & can share my blogs. Fully responsive with any device. 
 
-![](../../Downloads/mediamodifier_image.png)
+![mediamodifier_image](https://user-images.githubusercontent.com/76960580/149934813-c867b2e6-6201-4a2a-a952-84fdb2fb3d34.png)
 ###  🛠 Technologies I used :
 
 <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
