@@ -1,8 +1,9 @@
 # spyMonk-Says
 
-A personal blog website made with **django**
+A personal blog website made with **django**. <br>
+Here you can comment on my blogs & can share my blogs. Fully responsive with any device. 
 
-
+![](../../Downloads/mediamodifier_image.png)
 ###  🛠 Technologies I used :
 
 <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
@@ -16,10 +17,13 @@ A personal blog website made with **django**
 <a href="#"><img alt="SQLite" src ="https://img.shields.io/badge/SQLite-316192?style=for-the-badge&logo=sqlite&logoColor=white"></a>
 <a href="#"><img alt="PostgreSQL" src ="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"></a>
 <a href="#"><img alt="Pycharm" src="https://img.shields.io/badge/pycharm-FFD700?style=for-the-badge&logo=pycharm&logoColor=black"></a>
+<a href="#"><img alt="Heroku" src="https://img.shields.io/badge/heroku-563D7C?style=for-the-badge&logo=heroku&logoColor=white"></a>
 
 
 ###  📙 Documentations Used :
 
 🏷 <a href="https://pypi.org/project/django-cloudinary-storage/">Django Cloudinary</a> <br>
 🏷 <a href="https://pythonrepo.com/repo/shaunsephton-django-ckeditor-python-django-utilities">CKEditor</a> <br>
-🏷 <a href="https://pypi.org/project/Faker/">faker</a>
+🏷 <a href="https://pypi.org/project/Faker/">faker</a> <br>
+🏷 <a href= "https://www.tiny.cloud/docs/quick-start/">Tiny MCE </a> 
+
