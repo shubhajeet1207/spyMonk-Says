@@ -1,7 +1,7 @@
 # spyMonk-Says
 [spyMonk-SAYS](https://spymonk-says.herokuapp.com)
 
-A personal blog website made with **django**. <br>
+A personal blog website made with **django** and **Heroku**. <br>
 Here you can comment on my blogs & can share my blogs. Fully responsive with any device. 
 
 ![mediamodifier_image](https://user-images.githubusercontent.com/76960580/149934813-c867b2e6-6201-4a2a-a952-84fdb2fb3d34.png)
